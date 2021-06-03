@@ -4,12 +4,6 @@ import { Marker } from 'react-map-gl'
 import Mapbox from 'mapbox-gl'
 import Supercluster from 'supercluster'
 
-/*
-現状このコンポーネントは動かないので注意
-https://github.com/visgl/react-map-gl/issues/507#issuecomment-424860068
-
-この部分の移植
-*/
 
 type Props = {
   /** Mapbox map object */
@@ -33,10 +27,6 @@ type Props = {
   /** ReactDOM element to use as a marker */
   element?: (cluster: ClusterProps) => React.ReactNode
 
-  /**
-   * Callback that is called with the supercluster instance as an argument
-   * after componentDidMount
-   */
   innerRef?: React.MutableRefObject<any>
 
   /** Markers as children */
